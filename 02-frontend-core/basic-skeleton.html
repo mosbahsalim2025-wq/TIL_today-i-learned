@@ -1,28 +1,155 @@
 <!DOCTYPE.html>
 <!--doctype present that you are using html5 and clear some posibal problems wiht out it-->
+<!---
+b=> Bold
+strong => Bold => Important Text
+i=> Italic
+em-> Emphasized
+mark => Marked Text Or Highlighted Text
+u=> Underline
+small > Smaller text
+del > Deleted Text
+ins => Inserted Text
+sub => Subscript
+sup => Superscript
+-->
+
+
+
 <html>
     <head>
         <meta charset="UTF-8" />
         <title>Boxing Club H.S </title>
-        <meta name="description" content="best boxing club in sousse" />
+        <meta 
+            name="description" content="best boxing club in sousse" />  
+            <!-- or if it is one workd it can be withour "" name=description or wiht '' -->
         <!-- this is a comment, meat is jsut like hachtag in inst -->>
 
         <!-- enter shift alt put or down to do this  -->>
-        <!-- enter shift alt put or down to do this  -->>
+        <!-- enter shift alt put or down to do this  -->
 
     </head>
 
     <body>
-        <h1>This Is Boxing Club Hammem Sousse</h1>
-        <h4>welcome to our boxing club, where we offer top-notch training and a supportive community for all skill levels.
+        <h1 class="title">  This Is <b> <mark>Boxing Club Hammem <u>Sousse</u></mark></b></h1>
+        <!-- "mark" is used to mark text in yellow   "u" is used for underline  -->
+        <h4 class="subtitle">welcome to our boxing club, where we offer top-notch training and a supportive community for all skill levels.
              Our experienced coaches are dedicated to helping you achieve your fitness goals and 
             improve your boxing techniques. Join us today and become part of our passionate boxing family!</h4>
         <!-- h1 is for title typecly used one time 
             h2 is used for subtitles
             h3--h6 are used for evyrhtink else prety much we will see and search more tomorow abot those headers
-         
+        -->
+        <p hidden> first line </p> <p> <strong>second</strong><b> line</b></p> 
+        <!-- "hidden" is used to hide the element from the page -->
+        <!-- " strong" used to important words google searsh  " bold" or just b is jsut making the word gra -->
+        <p> <i>third</i> <em> <small>line</small> </em> </p>
+        <!--"i" and "em" are for italic font  "small" used to make a smaller fonr that the rest o the the paragraph -->
+
+
+        <img src="boxingphoto.png" alt="Boxing Club Hammem Sousse" />
+
+
+
+        <h1><del>90dt</del> <ins>just 30dt</ins></h1>
+    
+        
+        <h3>our best boxers in the club</h3>
+        <ul> 
+            <li>salim mosabh</li>
+            <li>mosabh salim :)</li>
+            <li>aymen mosabh
+                <ul>
+                    <li>omran</li>
+                    <li>ahmed</li>
+                </ul>
+            </li>
+        </ul>
+
+        <!---
+            reversed => Reverse The Ordering
+            start => Start From Position
+            value="50"=> just like start but for the first element in the list, it is more powerful than the satrt ,and it will place the ordering fot he rest of the list 
+            type => Type Of Ordering
+        -->
+        <ol reversed  start="1000">
+            <li value="50">salim mosabh</li>
+            <li>mosabh salim :)</li>
+            <li>aymen mosabh
+                <ol type="A">
+                    <li>omran</li>
+                    <li>ahmed</li>
+                
+                </ol>
+            </li>
+        </ol>
+
+        <!---
+            dl => Description List
+            dt => Term
+            dd => Description Term
         -->
 
+            <dl> 
+                <dt>salim mosabh</dt>
+                <dd>amateur boxer</dd>
+                <dd>weight class: 75kg</dd>
+                <dd>no official titles</dd>
+            </dl>
+
+
+        <table> 
+            <caption>Boxers Information</caption>
+            <thead> 
+                <tr> 
+                    <th>name</th>
+                    <th>height</th>
+                    <th>weight class</th>
+                </tr>
+            </thead>
+            <tbody> 
+                <tr> 
+                    <td>salim mosabh</td>
+                    <td>1.80m</td>
+                    <td>75kg</td>
+                </tr>
+                <tr> 
+                    <td>omran</td>
+                    <td>1.70m</td>
+                    <td>48kg</td>
+                </tr>
+                <tr> 
+                    <td>aymen mosabh</td>
+                    <td>1.79m</td>
+                    <td>70kg</td>
+                </tr>
+            </tbody>
+            <tfoot> 
+                <tr>
+                    <td>total</td>
+                    <td>3.29m</td>
+                    <td>193kg</td>
+                </tr>
+            </tfoot>
+        </table>
+        
+
+
+
+        
+
+
+
+        <audio controls>
+            <source src="audio/boxing.mp3" type="audio/mpeg" />
+        </audio>
+        <video controls>
+            <source src="video/boxing.mp4" type="video/mp4" />
+        </video>
+        <a href="https://www.facebook.com/groups/932684473440855" target="_blank">Join our Facebook group</a>
+        <!-- "a" is used to create a link to anoyther web or another page in your site test.html 
+         or creat an id or class in one prargraph and link it name to a and when clicking it will get you were that paragraph in the site is -->
+        <!-- target="_blanck" to open the link in a new tab -->
 
     </body>
 </html>
